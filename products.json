@@ -1,0 +1,1142 @@
+[
+  {
+    "stt": 1,
+    "name": "TPBVSK Canxi Dạng Bột Hòa Tan - Thiên Sư",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "100g (10g/gói x 10 gói)/hộp",
+    "pricing": {
+      "consumer": 647900,
+      "loyal_customer": 589000,
+      "new_member": 589000,
+      "member": 501320,
+      "core_member": 472360,
+      "manager": 443200,
+      "director": 414040,
+      "senior_director": 391500
+    },
+    "pv": 21.82,
+    "bv": 21.60
+  },
+  {
+    "stt": 2,
+    "name": "TPBVSK Canxi Dành Cho Trẻ Em - Thiên Sư",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "100g (10g/gói x 10 gói)/hộp",
+    "pricing": {
+      "consumer": 647900,
+      "loyal_customer": 589000,
+      "new_member": 589000,
+      "member": 501320,
+      "core_member": 472360,
+      "manager": 443200,
+      "director": 414040,
+      "senior_director": 391500
+    },
+    "pv": 21.82,
+    "bv": 21.60
+  },
+  {
+    "stt": 3,
+    "name": "TPBVSK Ca - Blood Sugar (Canxi đường huyết)",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "100g (10g/gói x 10 gói)/hộp",
+    "pricing": {
+      "consumer": 647900,
+      "loyal_customer": 589000,
+      "new_member": 589000,
+      "member": 518460,
+      "core_member": 484240,
+      "manager": 453780,
+      "director": 431590,
+      "senior_director": 405600
+    },
+    "pv": 21.82,
+    "bv": 15.44
+  },
+  {
+    "stt": 4,
+    "name": "Tiens Nutrient Super Calcium Powder (Canxi dinh dưỡng)",
+    "origin": "Pháp",
+    "category": "TPBS",
+    "packaging": "250g/lọ",
+    "pricing": {
+      "consumer": 1349500,
+      "loyal_customer": 1227000,
+      "new_member": 1227000,
+      "member": 1072290,
+      "core_member": 1020720,
+      "manager": 968880,
+      "director": 917310,
+      "senior_director": 865740
+    },
+    "pv": 45.45,
+    "bv": 38.24
+  },
+  {
+    "stt": 5,
+    "name": "TPBVSK Viên Đông Trùng Hạ Thảo",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "50g/lọ",
+    "pricing": {
+      "consumer": 1247400,
+      "loyal_customer": 1134000,
+      "new_member": 1134000,
+      "member": 965790,
+      "core_member": 909630,
+      "manager": 853470,
+      "director": 797310,
+      "senior_director": 741150
+    },
+    "pv": 42.00,
+    "bv": 41.58
+  },
+  {
+    "stt": 6,
+    "name": "TPBVSK Viên Chitosan",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "17g/lọ",
+    "pricing": {
+      "consumer": 1247400,
+      "loyal_customer": 1134000,
+      "new_member": 1134000,
+      "member": 965790,
+      "core_member": 909630,
+      "manager": 853470,
+      "director": 797310,
+      "senior_director": 741150
+    },
+    "pv": 42.00,
+    "bv": 41.58
+  },
+  {
+    "stt": 7,
+    "name": "TPBVSK Viên Tăng Cường Sức Khỏe",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "60g/lọ",
+    "pricing": {
+      "consumer": 1247400,
+      "loyal_customer": 1134000,
+      "new_member": 1134000,
+      "member": 965790,
+      "core_member": 909630,
+      "manager": 853470,
+      "director": 797310,
+      "senior_director": 741150
+    },
+    "pv": 42.00,
+    "bv": 41.58
+  },
+  {
+    "stt": 8,
+    "name": "TPBVSK Viên Tảo Spirulina",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "30g/lọ",
+    "pricing": {
+      "consumer": 894300,
+      "loyal_customer": 813000,
+      "new_member": 811000,
+      "member": 692850,
+      "core_member": 652620,
+      "manager": 612560,
+      "director": 572430,
+      "senior_director": 532470
+    },
+    "pv": 30.00,
+    "bv": 29.70
+  },
+  {
+    "stt": 9,
+    "name": "TPBVSK Viên Bổ Thận",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "35g/lọ",
+    "pricing": {
+      "consumer": 894300,
+      "loyal_customer": 813000,
+      "new_member": 813000,
+      "member": 716880,
+      "core_member": 684790,
+      "manager": 652620,
+      "director": 620580,
+      "senior_director": 588630
+    },
+    "pv": 30.00,
+    "bv": 23.26
+  },
+  {
+    "stt": 10,
+    "name": "TPBVSK Viên Sea Buckthorn (Dầu hắc mai biển)",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "35g/lọ",
+    "pricing": {
+      "consumer": 894300,
+      "loyal_customer": 813000,
+      "new_member": 813000,
+      "member": 729000,
+      "core_member": 700950,
+      "manager": 672870,
+      "director": 644790,
+      "senior_director": 616710
+    },
+    "pv": 30.00,
+    "bv": 20.79
+  },
+  {
+    "stt": 11,
+    "name": "TPBVSK Viên Dưỡng Nhan",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "30g/lọ",
+    "pricing": {
+      "consumer": 894300,
+      "loyal_customer": 813000,
+      "new_member": 813000,
+      "member": 716880,
+      "core_member": 684790,
+      "manager": 652620,
+      "director": 620760,
+      "senior_director": 588630
+    },
+    "pv": 30.00,
+    "bv": 23.26
+  },
+  {
+    "stt": 12,
+    "name": "TPBVSK Tiens Fe Folic Tablets (Viên sắt Folic)",
+    "origin": "Trung Quốc",
+    "category": "TPBVSK",
+    "packaging": "37.08g/lọ",
+    "pricing": {
+      "consumer": 297000,
+      "loyal_customer": 270000,
+      "new_member": 270000,
+      "member": 237870,
+      "core_member": 227070,
+      "manager": 216270,
+      "director": 205470,
+      "senior_director": 194670
+    },
+    "pv": 10.00,
+    "bv": 7.98
+  },
+  {
+    "stt": 13,
+    "name": "TPBVSK Instant Probiotics Powder (Bột men vi sinh)",
+    "origin": "Trung Quốc",
+    "category": "TPBVSK",
+    "packaging": "40g/hộp",
+    "pricing": {
+      "consumer": 458700,
+      "loyal_customer": 417000,
+      "new_member": 417000,
+      "member": 371500,
+      "core_member": 359220,
+      "manager": 331010,
+      "director": 336330,
+      "senior_director": 316020
+    },
+    "pv": 15.45,
+    "bv": 10.71
+  },
+  {
+    "stt": 14,
+    "name": "TPBS Tiens Prebiotic Dietary Fiber (Chất xơ)",
+    "origin": "Trung Quốc",
+    "category": "TPBS",
+    "packaging": "360g/hộp",
+    "pricing": {
+      "consumer": 687500,
+      "loyal_customer": 625000,
+      "new_member": 625000,
+      "member": 569180,
+      "core_member": 551020,
+      "manager": 532390,
+      "director": 513760,
+      "senior_director": 495400
+    },
+    "pv": 23.15,
+    "bv": 13.56
+  },
+  {
+    "stt": 15,
+    "name": "TPBVSK Viên Kẽm",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "16.2g/lọ",
+    "pricing": {
+      "consumer": 359700,
+      "loyal_customer": 327000,
+      "new_member": 327000,
+      "member": 278400,
+      "core_member": 262200,
+      "manager": 246000,
+      "director": 229800,
+      "senior_director": 213600
+    },
+    "pv": 12.12,
+    "bv": 12.00
+  },
+  {
+    "stt": 16,
+    "name": "TPBVSK Ích Thanh Trà",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "60g/hộp",
+    "pricing": {
+      "consumer": 297000,
+      "loyal_customer": 270000,
+      "new_member": 270000,
+      "member": 241920,
+      "core_member": 232470,
+      "manager": 223290,
+      "director": 213840,
+      "senior_director": 204390
+    },
+    "pv": 10.00,
+    "bv": 6.93
+  },
+  {
+    "stt": 17,
+    "name": "Fructooligosaccharide (FOS) (Siro)",
+    "origin": "Trung Quốc",
+    "category": "Thực phẩm thường",
+    "packaging": "60ml/hộp",
+    "pricing": {
+      "consumer": 237600,
+      "loyal_customer": 216000,
+      "new_member": 216000,
+      "member": 186030,
+      "core_member": 176040,
+      "manager": 166050,
+      "director": 156060,
+      "senior_director": 145800
+    },
+    "pv": 8.00,
+    "bv": 7.42
+  },
+  {
+    "stt": 18,
+    "name": "Cà phê trùng thảo (Cordy Cafe)",
+    "origin": "Việt Nam",
+    "category": "Thực phẩm thường",
+    "packaging": "192g/hộp",
+    "pricing": {
+      "consumer": 149600,
+      "loyal_customer": 136000,
+      "new_member": 136000,
+      "member": 123930,
+      "core_member": 119860,
+      "manager": 115790,
+      "director": 111720,
+      "senior_director": 107650
+    },
+    "pv": 5.03,
+    "bv": 3.00
+  },
+  {
+    "stt": 19,
+    "name": "Cà phê trùng thảo (Không đường)",
+    "origin": "Việt Nam",
+    "category": "Thực phẩm thường",
+    "packaging": "33g/hộp",
+    "pricing": {
+      "consumer": 95700,
+      "loyal_customer": 87000,
+      "new_member": 87000,
+      "member": 79440,
+      "core_member": 76740,
+      "manager": 74040,
+      "director": 71610,
+      "senior_director": 68910
+    },
+    "pv": 3.23,
+    "bv": 1.92
+  },
+  {
+    "stt": 20,
+    "name": "Cordy Multi Grain (Vị kỷ tử - táo đỏ)",
+    "origin": "Việt Nam",
+    "category": "Thực phẩm thường",
+    "packaging": "375g/lon",
+    "pricing": {
+      "consumer": 293700,
+      "loyal_customer": 267000,
+      "new_member": 267000,
+      "member": 243240,
+      "core_member": 235410,
+      "manager": 227580,
+      "director": 219480,
+      "senior_director": 211650
+    },
+    "pv": 9.89,
+    "bv": 5.87
+  },
+  {
+    "stt": 21,
+    "name": "Cordy Multi Grain (Vị Matcha)",
+    "origin": "Việt Nam",
+    "category": "Thực phẩm thường",
+    "packaging": "375g/lon",
+    "pricing": {
+      "consumer": 293700,
+      "loyal_customer": 267000,
+      "new_member": 267000,
+      "member": 243240,
+      "core_member": 235410,
+      "manager": 227580,
+      "director": 219480,
+      "senior_director": 211650
+    },
+    "pv": 9.89,
+    "bv": 5.87
+  },
+  {
+    "stt": 22,
+    "name": "Spakare Breathing Element (Dầu Spakare)",
+    "origin": "Ý",
+    "category": "Hóa mỹ phẩm",
+    "packaging": "10ml/hộp",
+    "pricing": {
+      "consumer": 243100,
+      "loyal_customer": 221000,
+      "new_member": 221000,
+      "member": 209120,
+      "core_member": 205020,
+      "manager": 201110,
+      "director": 196970,
+      "senior_director": 193100
+    },
+    "pv": 8.00,
+    "bv": 2.97
+  },
+  {
+    "stt": 23,
+    "name": "Cilvaris Rejuvenating Gel",
+    "origin": "Trung Quốc",
+    "category": "Mỹ phẩm",
+    "packaging": "80ml/lọ",
+    "pricing": {
+      "consumer": 330000,
+      "loyal_customer": 300000,
+      "new_member": 300000,
+      "member": 264900,
+      "core_member": 253020,
+      "manager": 241140,
+      "director": 229530,
+      "senior_director": 217650
+    },
+    "pv": 10.51,
+    "bv": 8.75
+  },
+  {
+    "stt": 24,
+    "name": "Celles Tiane Brightening Cleanser",
+    "origin": "Trung Quốc",
+    "category": "Mỹ phẩm",
+    "packaging": "100g/tuýp",
+    "pricing": {
+      "consumer": 220000,
+      "loyal_customer": 200000,
+      "new_member": 200000,
+      "member": 176580,
+      "core_member": 168660,
+      "manager": 160890,
+      "director": 153020,
+      "senior_director": 145100
+    },
+    "pv": 7.27,
+    "bv": 5.82
+  },
+  {
+    "stt": 25,
+    "name": "Celles Tiane Brightening Cream",
+    "origin": "Trung Quốc",
+    "category": "Mỹ phẩm",
+    "packaging": "50g/lọ",
+    "pricing": {
+      "consumer": 305800,
+      "loyal_customer": 278000,
+      "new_member": 278000,
+      "member": 245500,
+      "core_member": 234510,
+      "manager": 223460,
+      "director": 212560,
+      "senior_director": 201860
+    },
+    "pv": 10.10,
+    "bv": 8.09
+  },
+  {
+    "stt": 26,
+    "name": "Celles Tiane Brightening Toner",
+    "origin": "Trung Quốc",
+    "category": "Mỹ phẩm",
+    "packaging": "75ml/lọ",
+    "pricing": {
+      "consumer": 275000,
+      "loyal_customer": 250000,
+      "new_member": 250000,
+      "member": 220550,
+      "core_member": 210850,
+      "manager": 201110,
+      "director": 191140,
+      "senior_director": 181420
+    },
+    "pv": 9.09,
+    "bv": 7.21
+  },
+  {
+    "stt": 27,
+    "name": "Orecare Chinese Herbal Toothpaste",
+    "origin": "Trung Quốc",
+    "category": "Hóa mỹ phẩm",
+    "packaging": "135g/tuýp",
+    "pricing": {
+      "consumer": 121000,
+      "loyal_customer": 110000,
+      "new_member": 110000,
+      "member": 97060,
+      "core_member": 92570,
+      "manager": 86360,
+      "director": 81020,
+      "senior_director": 77330
+    },
+    "pv": 4.00,
+    "bv": 3.47
+  },
+  {
+    "stt": 28,
+    "name": "Máy mát xa mặt Cilvaris",
+    "origin": "Trung Quốc",
+    "category": "Thiết bị điện",
+    "packaging": "1 máy/hộp",
+    "pricing": {
+      "consumer": 4050200,
+      "loyal_customer": 3682000,
+      "new_member": 3682000,
+      "member": 3330710,
+      "core_member": 3249200,
+      "manager": 3128950,
+      "director": 3059420,
+      "senior_director": 2908990
+    },
+    "pv": 136.36,
+    "bv": 81.82
+  },
+  {
+    "stt": 29,
+    "name": "Bình pha loãng",
+    "origin": "Trung Quốc",
+    "category": "Gia dụng",
+    "packaging": "1 bình",
+    "pricing": {
+      "consumer": 24200,
+      "loyal_customer": 22000,
+      "new_member": 22000,
+      "member": 22000,
+      "core_member": 22000,
+      "manager": 22000,
+      "director": 22000,
+      "senior_director": 22000
+    },
+    "pv": 0,
+    "bv": 0
+  },
+  {
+    "stt": 30,
+    "name": "Bình nhựa (Plastic Cup)",
+    "origin": "Trung Quốc",
+    "category": "Gia dụng",
+    "packaging": "1 bình",
+    "pricing": {
+      "consumer": 48400,
+      "loyal_customer": 44000,
+      "new_member": 44000,
+      "member": 44000,
+      "core_member": 44000,
+      "manager": 44000,
+      "director": 44000,
+      "senior_director": 44000
+    },
+    "pv": 0,
+    "bv": 0
+  },
+  {
+    "stt": 31,
+    "name": "Coffee Cup (Cốc cà phê)",
+    "origin": "Trung Quốc",
+    "category": "Gia dụng",
+    "packaging": "1 bình",
+    "pricing": {
+      "consumer": 144100,
+      "loyal_customer": 131000,
+      "new_member": 131000,
+      "member": 131000,
+      "core_member": 131000,
+      "manager": 131000,
+      "director": 131000,
+      "senior_director": 131000
+    },
+    "pv": 0,
+    "bv": 0
+  },
+  {
+    "stt": 32,
+    "name": "Máy mát xa đầu Multifunctional",
+    "origin": "Trung Quốc",
+    "category": "Thiết bị điện",
+    "packaging": "1 máy/hộp",
+    "pricing": {
+      "consumer": 4455000,
+      "loyal_customer": 4050000,
+      "new_member": 4050000,
+      "member": 3570210,
+      "core_member": 3410100,
+      "manager": 3250260,
+      "director": 3090150,
+      "senior_director": 2930310
+    },
+    "pv": 150.00,
+    "bv": 118.50
+  },
+  {
+    "stt": 33,
+    "name": "Máy mát xa chân Thermal Meridian",
+    "origin": "Trung Quốc",
+    "category": "Thiết bị điện",
+    "packaging": "1 máy/hộp",
+    "pricing": {
+      "consumer": 19250000,
+      "loyal_customer": 17500000,
+      "new_member": 17500000,
+      "member": 15400500,
+      "core_member": 14768225,
+      "manager": 14000375,
+      "director": 13300250,
+      "senior_director": 12600000
+    },
+    "pv": 648.16,
+    "bv": 509.09
+  },
+  {
+    "stt": 34,
+    "name": "Máy mát xa cầm tay Reliz Device",
+    "origin": "Trung Quốc",
+    "category": "Thiết bị điện",
+    "packaging": "1 máy/hộp",
+    "pricing": {
+      "consumer": 11000000,
+      "loyal_customer": 10000000,
+      "new_member": 10000000,
+      "member": 8973180,
+      "core_member": 8506155,
+      "manager": 8125120,
+      "director": 7750090,
+      "senior_director": 7375060
+    },
+    "pv": 370.37,
+    "bv": 277.78
+  },
+  {
+    "stt": 35,
+    "name": "Taisun Slimming Massage Oil",
+    "origin": "Trung Quốc",
+    "category": "Hóa mỹ phẩm",
+    "packaging": "1 lọ/hộp",
+    "pricing": {
+      "consumer": 355300,
+      "loyal_customer": 323000,
+      "new_member": 323000,
+      "member": 292460,
+      "core_member": 282500,
+      "manager": 272510,
+      "director": 262240,
+      "senior_director": 252260
+    },
+    "pv": 11.72,
+    "bv": 7.50
+  },
+  {
+    "stt": 36,
+    "name": "Máy Massage toàn thân Taisun (TIS-002)",
+    "origin": "Trung Quốc",
+    "category": "Thiết bị điện",
+    "packaging": "1 máy/kiện",
+    "pricing": {
+      "consumer": 99902000,
+      "loyal_customer": 90820000,
+      "new_member": 90820000,
+      "member": 84008710,
+      "core_member": 81738200,
+      "manager": 79467550,
+      "director": 77197420,
+      "senior_director": 74926990
+    },
+    "pv": 3363.64,
+    "bv": 1681.82
+  },
+  {
+    "stt": 37,
+    "name": "Máy Massage toàn thân Taisun (TIS-008)",
+    "origin": "Trung Quốc",
+    "category": "Thiết bị điện",
+    "packaging": "1 máy/kiện",
+    "pricing": {
+      "consumer": 72900300,
+      "loyal_customer": 66273000,
+      "new_member": 66273000,
+      "member": 59986250,
+      "core_member": 57768000,
+      "manager": 55641350,
+      "director": 53519500,
+      "senior_director": 51389250
+    },
+    "pv": 2454.55,
+    "bv": 1575.00
+  },
+  {
+    "stt": 38,
+    "name": "Đệm điện Tiens Vitality (1.5M - SM)",
+    "origin": "Trung Quốc",
+    "category": "Thiết bị điện",
+    "packaging": "1 chiếc/hộp",
+    "pricing": {
+      "consumer": 18900200,
+      "loyal_customer": 17182000,
+      "new_member": 17182000,
+      "member": 15120280,
+      "core_member": 14433150,
+      "manager": 13745710,
+      "director": 13058560,
+      "senior_director": 12371240
+    },
+    "pv": 636.36,
+    "bv": 509.09
+  },
+  {
+    "stt": 39,
+    "name": "Đệm điện Tiens Vitality (Type A)",
+    "origin": "Trung Quốc",
+    "category": "Thiết bị điện",
+    "packaging": "1 chiếc/hộp",
+    "pricing": {
+      "consumer": 24300100,
+      "loyal_customer": 22091000,
+      "new_member": 22091000,
+      "member": 19440140,
+      "core_member": 18556410,
+      "manager": 17672990,
+      "director": 16789250,
+      "senior_director": 15905570
+    },
+    "pv": 818.18,
+    "bv": 654.55
+  },
+  {
+    "stt": 40,
+    "name": "Đệm điện Tiens Vitality (Type F)",
+    "origin": "Trung Quốc",
+    "category": "Thiết bị điện",
+    "packaging": "1 chiếc/hộp",
+    "pricing": {
+      "consumer": 24300100,
+      "loyal_customer": 22091000,
+      "new_member": 22091000,
+      "member": 19440140,
+      "core_member": 18556410,
+      "manager": 17672990,
+      "director": 16789250,
+      "senior_director": 15905570
+    },
+    "pv": 818.18,
+    "bv": 654.55
+  },
+  {
+    "stt": 41,
+    "name": "Non-Woven Shopping Bag (Big)",
+    "origin": "Trung Quốc",
+    "category": "Gia dụng",
+    "packaging": "Cái",
+    "pricing": {
+      "consumer": 36300,
+      "loyal_customer": 33000,
+      "new_member": 33000,
+      "member": 33000,
+      "core_member": 33000,
+      "manager": 33000,
+      "director": 33000,
+      "senior_director": 33000
+    },
+    "pv": 0,
+    "bv": 0
+  },
+  {
+    "stt": 42,
+    "name": "Non-Woven Shopping Bag (Small)",
+    "origin": "Trung Quốc",
+    "category": "Gia dụng",
+    "packaging": "Cái",
+    "pricing": {
+      "consumer": 24200,
+      "loyal_customer": 22000,
+      "new_member": 22000,
+      "member": 22000,
+      "core_member": 22000,
+      "manager": 22000,
+      "director": 22000,
+      "senior_director": 22000
+    },
+    "pv": 0,
+    "bv": 0
+  },
+  {
+    "stt": 43,
+    "name": "Băng vệ sinh ban ngày Airiz",
+    "origin": "Trung Quốc",
+    "category": "Vệ sinh",
+    "packaging": "10 gói/kiện",
+    "pricing": {
+      "consumer": 67100,
+      "loyal_customer": 61000,
+      "new_member": 61000,
+      "member": 54790,
+      "core_member": 52630,
+      "manager": 50490,
+      "director": 48310,
+      "senior_director": 46150
+    },
+    "pv": 2.27,
+    "bv": 1.55
+  },
+  {
+    "stt": 44,
+    "name": "Băng vệ sinh hàng ngày Airiz",
+    "origin": "Trung Quốc",
+    "category": "Vệ sinh",
+    "packaging": "30 gói/kiện",
+    "pricing": {
+      "consumer": 81400,
+      "loyal_customer": 74000,
+      "new_member": 74000,
+      "member": 66710,
+      "core_member": 64280,
+      "manager": 61590,
+      "director": 59150,
+      "senior_director": 56720
+    },
+    "pv": 2.75,
+    "bv": 1.84
+  },
+  {
+    "stt": 45,
+    "name": "Băng vệ sinh túi quà Airiz",
+    "origin": "Trung Quốc",
+    "category": "Vệ sinh",
+    "packaging": "6 gói/Túi",
+    "pricing": {
+      "consumer": 441100,
+      "loyal_customer": 401000,
+      "new_member": 401000,
+      "member": 358800,
+      "core_member": 346860,
+      "manager": 334800,
+      "director": 316760,
+      "senior_director": 302720
+    },
+    "pv": 14.95,
+    "bv": 10.40
+  },
+  {
+    "stt": 46,
+    "name": "Combo Tăng Cường Miễn Dịch",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "Bộ 3 sản phẩm",
+    "pricing": {
+      "consumer": 2699400,
+      "loyal_customer": 2454000,
+      "new_member": 2454000,
+      "member": 2113260,
+      "core_member": 1999590,
+      "manager": 1886190,
+      "director": 1772520,
+      "senior_director": 1658850
+    },
+    "pv": 90.00,
+    "bv": 84.15
+  },
+  {
+    "stt": 47,
+    "name": "Combo Xương Khớp 1",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "Bộ sản phẩm",
+    "pricing": {
+      "consumer": 2699400,
+      "loyal_customer": 2454000,
+      "new_member": 2454000,
+      "member": 2113260,
+      "core_member": 1999590,
+      "manager": 1886190,
+      "director": 1772520,
+      "senior_director": 1658850
+    },
+    "pv": 90.00,
+    "bv": 84.15
+  },
+  {
+    "stt": 48,
+    "name": "Combo Xương Khớp 2",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "Bộ sản phẩm",
+    "pricing": {
+      "consumer": 2699400,
+      "loyal_customer": 2454000,
+      "new_member": 2454000,
+      "member": 2113260,
+      "core_member": 1999590,
+      "manager": 1886190,
+      "director": 1772520,
+      "senior_director": 1658850
+    },
+    "pv": 90.00,
+    "bv": 84.15
+  },
+  {
+    "stt": 49,
+    "name": "Combo Điều Hòa Tam Cao 1",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "Bộ sản phẩm",
+    "pricing": {
+      "consumer": 2699400,
+      "loyal_customer": 2454000,
+      "new_member": 2454000,
+      "member": 2113260,
+      "core_member": 1999590,
+      "manager": 1886190,
+      "director": 1772520,
+      "senior_director": 1658850
+    },
+    "pv": 90.00,
+    "bv": 84.15
+  },
+  {
+    "stt": 50,
+    "name": "Combo Tăng Trưởng Chiều Cao",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "Bộ sản phẩm",
+    "pricing": {
+      "consumer": 2160400,
+      "loyal_customer": 1964000,
+      "new_member": 1964000,
+      "member": 1683470,
+      "core_member": 1589780,
+      "manager": 1496360,
+      "director": 1402630,
+      "senior_director": 1309250
+    },
+    "pv": 70.00,
+    "bv": 69.30
+  },
+  {
+    "stt": 51,
+    "name": "Combo Quản Lý Cân Nặng",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "Bộ sản phẩm",
+    "pricing": {
+      "consumer": 3779600,
+      "loyal_customer": 3436000,
+      "new_member": 3436000,
+      "member": 3043130,
+      "core_member": 2912200,
+      "manager": 2781250,
+      "director": 2650300,
+      "senior_director": 2519350
+    },
+    "pv": 127.00,
+    "bv": 97.10
+  },
+  {
+    "stt": 52,
+    "name": "Combo Tăng Cường Năng Lượng",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "Bộ sản phẩm",
+    "pricing": {
+      "consumer": 2970000,
+      "loyal_customer": 2700000,
+      "new_member": 2700000,
+      "member": 2339280,
+      "core_member": 2218860,
+      "manager": 2098710,
+      "director": 1978290,
+      "senior_director": 1858140
+    },
+    "pv": 100.00,
+    "bv": 89.10
+  },
+  {
+    "stt": 53,
+    "name": "Combo Bổ Thận",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "Bộ sản phẩm",
+    "pricing": {
+      "consumer": 2970000,
+      "loyal_customer": 2700000,
+      "new_member": 2700000,
+      "member": 2339280,
+      "core_member": 2218860,
+      "manager": 2098710,
+      "director": 1978290,
+      "senior_director": 1858140
+    },
+    "pv": 100.00,
+    "bv": 89.10
+  },
+  {
+    "stt": 54,
+    "name": "Combo Bảo Dưỡng Tử Cung",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "Bộ sản phẩm",
+    "pricing": {
+      "consumer": 2970000,
+      "loyal_customer": 2700000,
+      "new_member": 2700000,
+      "member": 2339280,
+      "core_member": 2218860,
+      "manager": 2098710,
+      "director": 1978290,
+      "senior_director": 1858140
+    },
+    "pv": 100.00,
+    "bv": 89.10
+  },
+  {
+    "stt": 55,
+    "name": "Combo Thanh Lọc Thải Độc",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "Bộ sản phẩm",
+    "pricing": {
+      "consumer": 6839800,
+      "loyal_customer": 6218000,
+      "new_member": 6218000,
+      "member": 5416100,
+      "core_member": 5148800,
+      "manager": 4881500,
+      "director": 4614200,
+      "senior_director": 4346900
+    },
+    "pv": 233.00,
+    "bv": 196.00
+  },
+  {
+    "stt": 56,
+    "name": "Combo Sức Khỏe Đường Ruột",
+    "origin": "Việt Nam",
+    "category": "TPBVSK",
+    "packaging": "Bộ sản phẩm",
+    "pricing": {
+      "consumer": 4859800,
+      "loyal_customer": 4418000,
+      "new_member": 4418000,
+      "member": 3835850,
+      "core_member": 3667000,
+      "manager": 3479750,
+      "director": 3292100,
+      "senior_director": 3104450
+    },
+    "pv": 165.64,
+    "bv": 139.00
+  },
+  {
+    "stt": 57,
+    "name": "Tổ Hợp Khởi Động",
+    "origin": "Pháp",
+    "category": "TPBS",
+    "packaging": "Bộ sản phẩm",
+    "pricing": {
+      "consumer": 5940000,
+      "loyal_customer": 5400000,
+      "new_member": 5400000,
+      "member": 4712310,
+      "core_member": 4482810,
+      "manager": 4253580,
+      "director": 4024350,
+      "senior_director": 3794880
+    },
+    "pv": 200.00,
+    "bv": 169.06
+  },
+  {
+    "stt": 58,
+    "name": "Tổ Hợp CSSK Nam Giới",
+    "origin": "Việt Nam",
+    "category": "TPBS",
+    "packaging": "Bộ sản phẩm",
+    "pricing": {
+      "consumer": 3712500,
+      "loyal_customer": 3375000,
+      "new_member": 3375000,
+      "member": 2929500,
+      "core_member": 2781000,
+      "manager": 2632500,
+      "director": 2484000,
+      "senior_director": 2335500
+    },
+    "pv": 125.00,
+    "bv": 110.00
+  },
+  {
+    "stt": 59,
+    "name": "Tổ Hợp CSSK Trung - Lão niên",
+    "origin": "Việt Nam",
+    "category": "TPBS",
+    "packaging": "Bộ sản phẩm",
+    "pricing": {
+      "consumer": 5494500,
+      "loyal_customer": 4995000,
+      "new_member": 4995000,
+      "member": 4367250,
+      "core_member": 4158000,
+      "manager": 3948750,
+      "director": 3739500,
+      "senior_director": 3530250
+    },
+    "pv": 185.00,
+    "bv": 155.00
+  },
+  {
+    "stt": 60,
+    "name": "Tổ Hợp CSSK Trẻ Em",
+    "origin": "Việt Nam",
+    "category": "TPBS",
+    "packaging": "Bộ sản phẩm",
+    "pricing": {
+      "consumer": 2970000,
+      "loyal_customer": 2700000,
+      "new_member": 2700000,
+      "member": 2340600,
+      "core_member": 2221200,
+      "manager": 2106000,
+      "director": 1987200,
+      "senior_director": 1868400
+    },
+    "pv": 100.00,
+    "bv": 88.00
+  }
+]

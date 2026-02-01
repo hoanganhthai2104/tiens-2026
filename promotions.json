@@ -1,0 +1,23 @@
+[
+    {
+        "id": "P001",
+        "title": "Gặp Gỡ Siêu Phẩm",
+        "image": "images/samsung-promo-1.png",
+        "description": "Công nghệ đột phá cho sức khỏe tương lai. Trải nghiệm ngay dòng sản phẩm mới.",
+        "link": "#"
+    },
+    {
+        "id": "P002",
+        "title": "TIENS Member+",
+        "image": "images/samsung-promo-2.png",
+        "description": "Đặc quyền hội viên. Tích lũy điểm thưởng và nhận ưu đãi độc quyền.",
+        "link": "#"
+    },
+    {
+        "id": "P003",
+        "title": "Combo Ưu Đãi",
+        "image": "images/samsung-promo-3.png",
+        "description": "Tiết kiệm hơn khi mua theo gói. Giải pháp toàn diện cho gia đình.",
+        "link": "#"
+    }
+]
