@@ -53,8 +53,11 @@ async function loadProducts() {
     }
 }
 
-const tbody = document.getElementById('productTableBody');
-tbody.innerHTML = list.map(p => `
+
+function renderProducts(list) {
+    const tbody = document.getElementById('productTableBody');
+    if (!tbody) return;
+    tbody.innerHTML = list.map(p => `
         <tr>
             <td data-label="#">${p.stt}</td>
             <td data-label="Sản Phẩm" style="font-weight:600;">${p.name}</td>
