@@ -3,7 +3,8 @@ const products = require('./products.json');
 const knowledgeBase = require('./knowledge_base.js');
 
 // Initialize Gemini with the User's Key
-const genAI = new GoogleGenerativeAI("AIzaSyCpc_z97TABlckVwWJhV_3QRMwABBvF0Ps");
+// Initialize Gemini with API Key from Environment Variable
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 module.exports = async (req, res) => {
     // 1. Enable CORS
@@ -29,8 +30,6 @@ module.exports = async (req, res) => {
         console.log("User Question:", userMsg);
 
         // 2. Prepare Context (Lite RAG)
-        // We convert the JSON data to a string to give Gemini the "Knowledge"
-        // To save tokens, we map only essential fields
         const productContext = products.map(p =>
             `- ${p.name}: Giá lẻ ${p.pricing.consumer.toLocaleString('vi-VN')}đ (Thành viên ${p.pricing.member.toLocaleString('vi-VN')}đ). Công dụng: ${p.category}`
         ).join('\n');
@@ -39,28 +38,42 @@ module.exports = async (req, res) => {
             `- Vấn đề ${key}: ${val.advice}. Gợi ý: ${val.products.join(', ')}`
         ).join('\n');
 
-        // 3. Construct Prompt
+        // 3. Construct Prompt (New User Instructions)
         const prompt = `
-        Bạn là "Trợ lý sức khỏe Tiens" chuyên nghiệp, thân thiện và nhiệt tình.
-        Nhiệm vụ: Tư vấn sản phẩm Thiên Sư (Tiens) cho khách hàng dựa trên dữ liệu được cung cấp dưới đây.
+        VAI TRÒ: Bạn là Trợ lý Sản phẩm Tiens – chuyên gia tư vấn sức khỏe và dưỡng sinh Đông y.
+        
+        TÍNH CÁCH & GIỌNG ĐIỆU:
+        - Chuyên nghiệp, lịch sự, đúng chuẩn Nhân viên Chăm sóc Khách hàng (CSKH).
+        - Xưng hô: Xưng "Em" hoặc "Tiens". Gọi khách là "Anh/Chị" hoặc "Quý khách".
+        - TUYỆT ĐỐI KHÔNG gọi khách là "Bác" (nghe quá dân dã, thiếu chuyên nghiệp).
+        - Giọng văn: Nhiệt tình nhưng chừng mực, trân trọng khách hàng.
 
-        KHÔNG ĐƯỢC BỊA ĐẶT thông tin. Nếu không có trong dữ liệu, hãy nói khéo là chưa có thông tin.
-        Luôn ưu tiên giới thiệu sản phẩm phù hợp và báo giá chính xác.
+        NHIỆM VỤ CỤ THỂ (TUÂN THỦ 100%):
+        1. Giải đáp mọi câu hỏi về sản phẩm Tiens: công dụng, thành phần, đối tượng, liều dùng, lộ trình.
+        2. Tư vấn theo triệu chứng: đau lưng, mất ngủ, nóng gan, mỡ máu, tiêu hóa kém...
+        3. TRẢ LỜI NGẮN GỌN - SÚC TÍCH - ĐÚNG TRỌNG TÂM.
+        4. LUÔN đưa ra ví dụ thực tế và câu hỏi gợi mở để chốt sale (Ví dụ: "Anh/Chị có muốn dùng thử liệu trình này không ạ?").
+        5. Đề xuất Combo sản phẩm + Cách dùng + Lưu ý sinh hoạt.
+        6. Khi so sánh: Nêu rõ ưu điểm, đối tượng phù hợp.
+        7. TUYỆT ĐỐI TRUNG THỰC: 
+           - Chỉ trả lời dựa trên dữ liệu được cung cấp dưới đây.
+           - Không bịa đặt thông tin (Hallucination).
+           - Nếu không có thông tin trong dữ liệu, hãy nói khéo: "Dạ vấn đề này hiện em chưa có thông tin chính thức trong tài liệu, để em kiểm tra lại và báo Anh/Chị sau nhé ạ."
 
-        --- DỮ LIỆU SẢN PHẨM HỆ THỐNG ---
+        --- DỮ LIỆU SẢN PHẨM (SỰ THẬT DUY NHẤT) ---
         ${productContext}
 
-        --- KIẾN THỨC BỆNH LÝ CƠ BẢN ---
+        --- CẨM NANG BỆNH LÝ (SỰ THẬT DUY NHẤT) ---
         ${knowledgeContext}
         ---------------------------------
 
-        Câu hỏi của khách hàng: "${userMsg}"
+        CÂU HỎI CỦA KHÁCH: "${userMsg}"
         
-        Trả lời (bằng tiếng Việt, ngắn gọn, dùng emoji, định dạng Markdown):
+        HÃY TRẢ LỜI NGAY (Định dạng Markdown đẹp mắt, dùng icon 🌿✨ cho sinh động):
         `;
 
         // 4. Call Gemini API
-        const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+        const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" }); // Using 2.0 Flash for speed and quality
         const result = await model.generateContent(prompt);
         const response = await result.response;
         const text = response.text();
@@ -71,7 +84,7 @@ module.exports = async (req, res) => {
     } catch (error) {
         console.error("Gemini Error:", error);
         return res.status(200).json({
-            answer: "⚠️ Hệ thống đang quá tải một chút. Bạn vui lòng hỏi lại câu ngắn hơn nhé! (Error: API Busy)"
+            answer: `⚠️ Dạ hệ thống đang bảo trì một chút xíu, bác thử lại sau vài giây nhé! (Lỗi: ${error.message || error})`
         });
     }
 };
