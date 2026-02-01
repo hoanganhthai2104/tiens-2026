@@ -66,7 +66,7 @@ module.exports = async (req, res) => {
         `;
 
         // 4. Call Gemini API
-        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+        const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
         const result = await model.generateContent(prompt);
         const response = await result.response;
         const text = response.text();
@@ -77,7 +77,7 @@ module.exports = async (req, res) => {
     } catch (error) {
         console.error("Gemini Error:", error);
         return res.status(200).json({
-            answer: "⚠️ Hệ thống đang quá tải một chút. Bạn vui lòng hỏi lại câu ngắn hơn nhé! (Error: API Busy)"
+            answer: `⚠️ Hệ thống gặp lỗi kỹ thuật. (Chi tiết: ${error.message || error})`
         });
     }
 };
