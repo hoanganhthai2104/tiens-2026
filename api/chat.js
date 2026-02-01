@@ -3,7 +3,8 @@ const products = require('./products.json');
 const knowledgeBase = require('./knowledge_base.js');
 
 // Initialize Gemini with the User's Key
-const genAI = new GoogleGenerativeAI("AIzaSyCpc_z97TABlckVwWJhV_3QRMwABBvF0Ps");
+// Initialize Gemini with API Key from Environment Variable
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 module.exports = async (req, res) => {
     // 1. Enable CORS
