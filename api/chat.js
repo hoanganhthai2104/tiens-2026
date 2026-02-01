@@ -1,8 +1,12 @@
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 const products = require('./products.json');
 const knowledgeBase = require('./knowledge_base.js');
 
+// Initialize Gemini with the User's Key
+const genAI = new GoogleGenerativeAI("AIzaSyCpc_z97TABlckVwWJhV_3QRMwABBvF0Ps");
+
 module.exports = async (req, res) => {
-    // Enable CORS
+    // 1. Enable CORS
     res.setHeader('Access-Control-Allow-Credentials', true);
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
@@ -21,62 +25,53 @@ module.exports = async (req, res) => {
     }
 
     try {
-        const msg = req.body.message || '';
-        const lowerMsg = msg.toLowerCase();
+        const userMsg = req.body.message || '';
+        console.log("User Question:", userMsg);
 
-        // Helper
-        function formatPrice(price) {
-            return price.toLocaleString('vi-VN') + ' đ';
-        }
+        // 2. Prepare Context (Lite RAG)
+        // We convert the JSON data to a string to give Gemini the "Knowledge"
+        // To save tokens, we map only essential fields
+        const productContext = products.map(p =>
+            `- ${p.name}: Giá lẻ ${p.pricing.consumer.toLocaleString('vi-VN')}đ (Thành viên ${p.pricing.member.toLocaleString('vi-VN')}đ). Công dụng: ${p.category}`
+        ).join('\n');
 
-        // Logic copied from server.js
-        let keyword = null;
-        if (lowerMsg.includes('gout') || lowerMsg.includes('gút')) keyword = 'gout';
-        else if (lowerMsg.includes('xương') || lowerMsg.includes('khớp') || lowerMsg.includes('đau lưng')) keyword = 'xuong_khop';
-        else if (lowerMsg.includes('tiểu đường') || lowerMsg.includes('đường huyết')) keyword = 'tieu_duong';
-        else if (lowerMsg.includes('tim') || lowerMsg.includes('huyết áp')) keyword = 'tim_mach';
-        else if (lowerMsg.includes('dạ dày') || lowerMsg.includes('bao tử')) keyword = 'da_day';
-        else if (lowerMsg.includes('ngủ') || lowerMsg.includes('mất ngủ')) keyword = 'mat_ngu';
+        const knowledgeContext = Object.entries(knowledgeBase).map(([key, val]) =>
+            `- Vấn đề ${key}: ${val.advice}. Gợi ý: ${val.products.join(', ')}`
+        ).join('\n');
 
-        let answer = '';
+        // 3. Construct Prompt
+        const prompt = `
+        Bạn là "Trợ lý sức khỏe Tiens" chuyên nghiệp, thân thiện và nhiệt tình.
+        Nhiệm vụ: Tư vấn sản phẩm Thiên Sư (Tiens) cho khách hàng dựa trên dữ liệu được cung cấp dưới đây.
 
-        // 1. Check Knowledge Base
-        if (keyword && knowledgeBase[keyword]) {
-            const info = knowledgeBase[keyword];
-            answer += `💡 **Tư vấn:** ${info.advice}\n\n`;
-            answer += `💊 **Sản phẩm khuyên dùng:**\n`;
+        KHÔNG ĐƯỢC BỊA ĐẶT thông tin. Nếu không có trong dữ liệu, hãy nói khéo là chưa có thông tin.
+        Luôn ưu tiên giới thiệu sản phẩm phù hợp và báo giá chính xác.
 
-            info.products.forEach(pName => {
-                const product = products.find(p => p.name.includes(pName)) || products.find(p => p.name.includes(pName.split(' ')[0]));
-                if (product) {
-                    answer += `- **${product.name}**: ${formatPrice(product.pricing.consumer)}\n`;
-                } else {
-                    answer += `- ${pName}\n`;
-                }
-            });
-        }
-        // 2. Check Price
-        else if (lowerMsg.includes('giá') || lowerMsg.includes('bao nhiêu')) {
-            const productMatches = products.filter(p => lowerMsg.includes(p.name.toLowerCase()) || (p.category && lowerMsg.includes(p.category.toLowerCase())));
-            if (productMatches.length > 0) {
-                const p = productMatches[0];
-                answer = `💰 **${p.name}** có giá bán lẻ là **${formatPrice(p.pricing.consumer)}**.\n\n(Giá thành viên: ${formatPrice(p.pricing.member)})`;
-            } else {
-                answer = "Bạn muốn hỏi giá sản phẩm nào? (Ví dụ: 'Giá Canxi', 'Giá Trà').";
-            }
-        }
-        // 3. Greeting
-        else if (lowerMsg.includes('chào') || lowerMsg.includes('hello')) {
-            answer = "Chào bạn! Tôi là trợ lý sức khỏe Tiens. Bạn cần tra cứu giá hay tư vấn bệnh lý (Xương khớp, Gout, Dạ dày...)?";
-        }
-        else {
-            answer = "Xin lỗi, tôi chưa hiểu rõ. Bạn có thể hỏi về:\n- Bệnh lý (Gout, Tiểu đường...)\n- Giá sản phẩm\n- Khuyến mãi";
-        }
+        --- DỮ LIỆU SẢN PHẨM HỆ THỐNG ---
+        ${productContext}
 
-        return res.status(200).json({ answer });
+        --- KIẾN THỨC BỆNH LÝ CƠ BẢN ---
+        ${knowledgeContext}
+        ---------------------------------
+
+        Câu hỏi của khách hàng: "${userMsg}"
+        
+        Trả lời (bằng tiếng Việt, ngắn gọn, dùng emoji, định dạng Markdown):
+        `;
+
+        // 4. Call Gemini API
+        const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+        const result = await model.generateContent(prompt);
+        const response = await result.response;
+        const text = response.text();
+
+        // 5. Return Answer
+        return res.status(200).json({ answer: text });
 
     } catch (error) {
-        console.error("Serverless Error:", error);
-        return res.status(500).json({ error: "Internal Server Error" });
+        console.error("Gemini Error:", error);
+        return res.status(200).json({
+            answer: "⚠️ Hệ thống đang quá tải một chút. Bạn vui lòng hỏi lại câu ngắn hơn nhé! (Error: API Busy)"
+        });
     }
 };
