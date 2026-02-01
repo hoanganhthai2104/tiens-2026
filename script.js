@@ -135,7 +135,7 @@ async function sendMessage() {
     try {
         console.log("Sending request to server...");
         // Use relative path so it works on Cloudflare tunnel too
-        const res = await fetch('/chat', {
+        const res = await fetch('/api/chat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: text })
