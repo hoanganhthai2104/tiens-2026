@@ -76,6 +76,11 @@ header {
     color: var(--primary-blue);
 }
 
+/* Legacy Button - Forced Hidden */
+.btn-link {
+    display: none !important;
+}
+
 .nav-right {
     display: flex;
     align-items: center;
@@ -161,62 +166,112 @@ header {
 
 .promo-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 Columns side-by-side */
+    gap: 2rem;
     margin-bottom: 4rem;
+    max-width: 1200px;
+    /* Wider container for side-by-side */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .promo-card {
-    background: #fff;
-    border-radius: var(--radius-card);
+    display: flex;
+    flex-direction: column;
+    /* Vertical Stack within card */
+    background: #ffffff;
+    border-radius: 24px;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 100%;
+    /* Equal height */
 }
 
 .promo-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
-.promo-card img {
+.promo-image {
     width: 100%;
+    /* Removed fixed height to prevent cropping */
     height: auto;
-    display: block;
-    aspect-ratio: 16/9;
-    object-fit: cover;
+    aspect-ratio: 4/3;
+    /* Standard rectangle */
+    flex: none;
+    position: relative;
+    overflow: hidden;
+    background: #f8f9fa;
+    /* Light placeholder bg */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.promo-info {
-    padding: 1.5rem;
+.promo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* CRITICAL: Ensures full image is visible */
+    transition: transform 0.6s ease;
 }
 
-.promo-info h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+.promo-card:hover .promo-image img {
+    transform: scale(1.05);
+    /* Subtle zoom */
 }
 
-.promo-info p {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
+.promo-content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Align text to top */
+}
+
+.promo-content h3 {
+    font-size: 1.4rem;
+    /* Adjusted for grid size */
+    font-weight: 700;
     margin-bottom: 1rem;
-}
-
-.btn-link {
-    text-decoration: none;
     color: #000;
-    font-weight: 600;
-    border-bottom: 1px solid #000;
-    padding-bottom: 2px;
-    font-size: 0.9rem;
-    transition: color 0.2s;
+    line-height: 1.4;
 }
 
-.btn-link:hover {
-    color: var(--primary-blue);
-    border-color: var(--primary-blue);
+.promo-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0;
+}
+
+/* Mobile Responsive: 1 Column */
+@media (max-width: 768px) {
+    .promo-grid {
+        grid-template-columns: 1fr;
+        /* Stack on mobile */
+    }
+
+    .promo-card {
+        max-width: none;
+    }
+
+    .promo-image {
+        height: auto;
+        /* Allow aspect ratio to control height */
+        aspect-ratio: 4/3;
+        /* Maintain same ratio as desktop */
+    }
+
+    .promo-content {
+        padding: 1.5rem;
+    }
 }
 
 /* Product Table Section */

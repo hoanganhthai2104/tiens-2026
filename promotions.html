@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khuyến Mãi - Tiens</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+
+    <nav class="glass-nav">
+        <div class="logo">TIENS • Care</div>
+        <div class="nav-links">
+            <a href="index.html">Trang Chủ</a>
+            <a href="products.html">Tra Cứu Giá</a>
+            <a href="promotions.html" class="active">Khuyến Mãi</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header center">
+            <h2 class="glow-text">Chương Trình Khuyến Mãi Tháng này</h2>
+            <p>Cập nhật những ưu đãi hấp dẫn nhất dành cho bạn</p>
+        </div>
+
+        <div class="promo-grid" id="promoGrid">
+            <!-- Data will be populated by JS -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', loadPromotions);
+    </script>
+</body>
+
+</html>

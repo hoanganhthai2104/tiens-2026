@@ -1,23 +1,37 @@
 [
     {
         "id": "P001",
-        "title": "Gặp Gỡ Siêu Phẩm",
-        "image": "samsung-promo-1.png",
-        "description": "Công nghệ đột phá cho sức khỏe tương lai. Trải nghiệm ngay dòng sản phẩm mới.",
+        "title": "MUA 10 TẶNG 3: Fructooligosaccharide (FOS)",
+        "image": "images/promo-fos.jpg",
+        "description": "Thời gian: 28/01 - 26/02/2026. <br>Ưu đãi dành riêng cho Khách hàng thân thiết và Nhà phân phối. Mua 10 hộp FOS Thiên Sư tặng ngay 03 hộp cùng loại. Giải pháp vàng cho hệ tiêu hóa khỏe mạnh.",
         "link": "#"
     },
     {
         "id": "P002",
-        "title": "TIENS Member+",
-        "image": "samsung-promo-2.png",
-        "description": "Đặc quyền hội viên. Tích lũy điểm thưởng và nhận ưu đãi độc quyền.",
+        "title": "TẶNG 01 VIÊN DƯỠNG NHAN (Đơn 4.5 Triệu)",
+        "image": "images/promo-duongnhan.jpg",
+        "description": "Thời gian: 28/01 - 26/02/2026. <br>Với mỗi đơn hàng trị giá 4.500.000 VNĐ, Quý khách sẽ được tặng ngay 01 lọ Thực phẩm bảo vệ sức khỏe Viên Dưỡng Nhan Thiên Sư. Bí quyết gìn giữ nét xuân từ thảo dược Đông y.",
         "link": "#"
     },
     {
         "id": "P003",
-        "title": "Combo Ưu Đãi",
-        "image": "samsung-promo-3.png",
-        "description": "Tiết kiệm hơn khi mua theo gói. Giải pháp toàn diện cho gia đình.",
+        "title": "THƯỞNG NGAY 1.000.000 VNĐ (Phát Triển Người Mới)",
+        "image": "images/promo-cash.jpg",
+        "description": "Thời gian: 28/01 - 26/02/2026. <br>Ưu đãi dành cho tất cả Nhà phân phối. Trong tháng phát triển được 03 người mới (mỗi người 200 PV) -> Nhận ngay tiền thưởng nóng 1.000.000 VNĐ.",
+        "link": "#"
+    },
+    {
+        "id": "P004",
+        "title": "TẶNG KHÓA ĐÀO TẠO 120$ (Thăng Cấp Quản Lý)",
+        "image": "images/promo-training.jpg",
+        "description": "Thời gian: 28/01 - 26/03/2026 (2 tháng). <br>Dành cho Người mới hoặc Thành viên. Thăng cấp nhanh lên Quản lý kinh doanh với thành tích nhóm 3500 PV -> Tặng khóa đào tạo trị giá 120 USD.",
+        "link": "#"
+    },
+    {
+        "id": "P005",
+        "title": "THƯỞNG 1.200 USD (Thăng Cấp GĐKD)",
+        "image": "images/promo-director.jpg",
+        "description": "Thời gian: 01/01/2026 - 26/12/2026. <br>Ưu đãi HOT nhất năm! Thăng cấp nhanh Giám đốc kinh doanh (Doanh số mạng lưới ≥ 70.000 PV) -> Nhận thưởng tiền mặt 1.200 USD.",
         "link": "#"
     }
 ]
