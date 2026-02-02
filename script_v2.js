@@ -26,7 +26,9 @@ async function loadPromotions() {
         grid.innerHTML = data.map(promo => `
             <div class="promo-card samsung-style">
                 <div class="promo-image">
-                    <img src="${promo.image}" alt="${promo.title}">
+                    <img src="${promo.image}" 
+                         alt="${promo.title}" 
+                         onerror="this.onerror=null; this.src='${promo.image.replace('images/', '')}'">
                 </div>
                 <div class="promo-content">
                     <h3>${promo.title}</h3>
