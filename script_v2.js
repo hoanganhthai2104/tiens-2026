@@ -15,30 +15,113 @@ window.onload = function () {
 };
 
 // -- Promotions --
+// Feature Carousel Logic
+let promoInterval = null;
+let currentPromoIndex = 0;
+let promoData = [];
+
 async function loadPromotions() {
-    const grid = document.getElementById('promoGrid');
-    if (!grid) return;
+    const container = document.getElementById('promoGrid');
+    if (!container) return;
+
+    // Switch container class for styling
+    container.className = 'feature-container'; // Replaces 'promo-grid'
 
     try {
         const res = await fetch('promotions.json');
-        const data = await res.json();
+        promoData = await res.json();
 
-        grid.innerHTML = data.map(promo => `
-            <div class="promo-card samsung-style">
-                <div class="promo-image">
-                    <img src="${promo.image}" 
-                         alt="${promo.title}" 
-                         onerror="this.onerror=null; this.src='${promo.image.replace('images/', '')}'">
-                </div>
-                <div class="promo-content">
-                    <h3>${promo.title}</h3>
-                    <p>${promo.description}</p>
+        // 1. Build Layout (Left List + Right Image Display)
+        const listHTML = promoData.map((p, i) => {
+            // Simple parsing to extract Time and content after <br>
+            let time = '';
+            let target = '';
+
+            if (p.description.includes('Thời gian:')) {
+                const parts = p.description.split(/<br>|\n/);
+                time = parts.find(s => s.trim().startsWith('Thời gian:')) || '';
+                // Try to find the target/audience line (usually the part after time or specific keywords)
+                // If not found, take the second part as "Details"
+                const rest = parts.filter(s => !s.trim().startsWith('Thời gian:')).join(' ');
+                target = rest.replace(/(Ưu đãi dành riêng cho|Dành cho|Ưu đãi dành cho|Đối tượng:)/i, '<b>Đối tượng:</b> $1');
+            } else {
+                target = p.description;
+            }
+
+            return `
+            <div class="feature-item" onclick="selectPromo(${i})" id="promo-item-${i}">
+                <div class="feature-circle">${i + 1}</div>
+                <div class="feature-text">
+                    <h3>${p.title}</h3>
+                    <p class="promo-time">${time}</p>
+                    <p class="promo-target">${target}</p>
+                    <!-- Mobile-only inline image -->
+                    <img class="mobile-promo-img" src="${p.image}" alt="${p.title}" 
+                         onerror="this.style.display='none'">
+                    <div class="feature-progress" id="progress-${i}"></div>
                 </div>
             </div>
+            `;
+        }).join('');
+
+        const imagesHTML = promoData.map((p, i) => `
+            <img src="${p.image}" 
+                 id="promo-img-${i}" 
+                 class="${i === 0 ? 'active' : ''}"
+                 onerror="this.onerror=null; this.src='${p.image.replace('images/', '')}'"
+                 alt="${p.title}">
         `).join('');
+
+        container.innerHTML = `
+            <div class="feature-list">${listHTML}</div>
+            <div class="feature-display">${imagesHTML}</div>
+        `;
+
+        // 2. Start Carousel
+        startPromoCarousel();
+
     } catch (e) {
         console.error('Promo load error', e);
+        container.innerHTML = '<p>Không thể tải khuyến mãi.</p>';
     }
+}
+
+function selectPromo(index) {
+    if (index === currentPromoIndex) return;
+
+    // Reset Timer on manual interaction
+    clearInterval(promoInterval);
+    updatePromoUI(index);
+    startPromoCarousel(); // Restart with new baseline
+}
+
+function updatePromoUI(index) {
+    // 1. Update Items (Active State)
+    document.querySelectorAll('.feature-item').forEach((el, i) => {
+        el.classList.toggle('active', i === index);
+        const circle = el.querySelector('.feature-circle');
+        circle.textContent = (i <= index) ? '✓' : (i + 1);
+    });
+
+    // 2. Update Images (Active State)
+    document.querySelectorAll('.feature-display img').forEach((img, i) => {
+        img.classList.toggle('active', i === index);
+    });
+
+    currentPromoIndex = index;
+}
+
+function startPromoCarousel() {
+    // Initial Render
+    updatePromoUI(currentPromoIndex);
+
+    // Auto Loop
+    if (promoInterval) clearInterval(promoInterval);
+
+    promoInterval = setInterval(() => {
+        let nextIndex = (currentPromoIndex + 1) % promoData.length;
+        updatePromoUI(nextIndex);
+    }, 4000); // 4 seconds per slide
 }
 
 // -- Products --
